@@ -1,10 +1,6 @@
-import React, {
-  useEffect,
-  useState,
-  useContext
-} from 'react';
-import { useParams } from 'react-router-dom';
-import './View.css';
+import React, { useEffect, useState, useContext } from "react";
+import { useParams } from "react-router-dom";
+import "./View.css";
 
 const PokemonView = () => {
   const [pokemon, setPokemon] = useState(null);
@@ -26,7 +22,7 @@ const PokemonView = () => {
     <div className="PokemonView">
       <h1>{pokemon.name}</h1>
       <img
-        src={pokemon.sprites.front_default}
+        src={pokemon.sprites.other.dream_world.front_default}
         alt={pokemon.name}
       />
       Abilities
